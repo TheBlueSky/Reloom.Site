@@ -18,10 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
       email.focus();
       return;
     }
-    if (form.getAttribute("action").startsWith("BREVO_")) {
-      show("Signup opens soon. Please check back in a few days.", "error");
-      return;
-    }
     button.disabled = true;
     show("Sending…", "pending");
     try {
