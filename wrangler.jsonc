@@ -1,0 +1,9 @@
+// Cloudflare Workers static assets: serves public/ as-is, with no Worker script.
+{
+  "name": "reloom-site",
+  "compatibility_date": "2026-10-25",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}

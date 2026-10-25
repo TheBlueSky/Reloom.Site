@@ -11,7 +11,7 @@ Plain HTML and CSS with no build step. Everything that is published is in `publi
 | `public/confirmed.html` | Landing page after a visitor confirms their email (double opt-in) |
 | `public/404.html` | Not-found page |
 | `public/signup.js` | Submits the waitlist form to Brevo in the background |
-| `public/_headers` | Security headers for Cloudflare Pages |
+| `public/_headers` | Security headers, applied by Cloudflare |
 | `public/img/` | App screenshots, light and dark |
 | `public/fonts/` | Self-hosted Fraunces and Inter (SIL Open Font License) |
 
@@ -23,7 +23,7 @@ npx --yes serve public
 
 ## Deploy
 
-Cloudflare Pages deploys every push to `main`: no framework preset, no build command, output directory `public`.
+Cloudflare Workers Builds deploys every push to `main` with `npx wrangler deploy`. `wrangler.jsonc` serves `public/` as static assets, with no Worker script.
 
 ## Waitlist
 
