@@ -29,6 +29,6 @@ Cloudflare Workers Builds deploys every push to `main` with `npx wrangler deploy
 
 The waitlist is a Brevo list with double opt-in. The form's `action` in `public/index.html` is the Brevo form endpoint (`https://<id>.sibforms.com/serve/<form-id>`). After confirming, visitors land on `/confirmed`.
 
-## Before launch
+## Legal details
 
-Replace the placeholders in `public/privacy.html` and the page footers: `[LEGAL OPERATOR NAME]`, `[ADDRESS]`, `[CONTACT EMAIL]` and `[DATE]`.
+The operator (Nieuwe Bladzijde) and contacts (support@ and privacy@reloomapp.com) match the app's legal texts (TheBlueSky/Afterglow#69). Change them together, and update the date in `public/privacy.html` when its text changes.
